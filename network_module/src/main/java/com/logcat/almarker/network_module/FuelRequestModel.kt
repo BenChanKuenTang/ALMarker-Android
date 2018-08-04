@@ -5,9 +5,9 @@ class FuelRequestModel(
         requestUrl: String,
         parameter: Any? = null,
         body: Any? = null,
-        header: List<Map<String, String>>? = null,
+        headers: List<Map<String, String>>? = null,
         successCallback: successCallback,
-        errorCallback: errorCallback
+        failCallback: failCallback
 ): RequestModel<List<Pair<String, Any?>>, String>(
-        requestMethod, requestUrl, parameter, body, header, successCallback, errorCallback
+        requestMethod, requestUrl, parameter, body, headers, successCallback, failCallback
 )

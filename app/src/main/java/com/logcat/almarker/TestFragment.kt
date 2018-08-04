@@ -25,14 +25,14 @@ class TestFragment : BaseFragment() {
     }
 
     private fun call() {
-        FuelNetworkUtil().request(
+        FuelNetworkUtil().request<List<HolidayModel>>(
                 FuelRequestModel(
                         RequestMethod.GET,
                         "holiday.php",
-                        successCallback = {
+                        successCallback = { statusCode, response ->
 
                         },
-                        errorCallback = {
+                        failCallback = { error ->
 
                         }
                 )

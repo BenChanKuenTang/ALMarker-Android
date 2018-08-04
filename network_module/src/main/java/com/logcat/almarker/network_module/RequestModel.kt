@@ -7,17 +7,17 @@ import com.google.gson.reflect.TypeToken
  * Created by Ben on 31/7/2018.
  */
 
-typealias successCallback = (String) -> Unit
-typealias errorCallback = (String) -> Unit
+typealias successCallback = (Int, Any?) -> Unit
+typealias failCallback = (String) -> Unit
 
-abstract class RequestModel<PARAMETER, BODY>(
+open class RequestModel<PARAMETER, BODY>(
         val requestMethod: RequestMethod,
         val requestUrl: String,
         private val parameter: Any? = null,
         private val body: Any? = null,
-        val header: List<Map<String, String>>? = null,
+        val headers: List<Map<String, String>>? = null,
         val successCallback: successCallback,
-        val errorCallback: errorCallback
+        val failCallback: failCallback
 ) {
     fun getParsedParameter(): PARAMETER? {
         return parameter?.let {
