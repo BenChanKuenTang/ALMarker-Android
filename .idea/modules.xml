@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/ALMarker-Android.iml" filepath="$PROJECT_DIR$/ALMarker-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/network_module/network_module.iml" filepath="$PROJECT_DIR$/network_module/network_module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui_module/ui_module.iml" filepath="$PROJECT_DIR$/ui_module/ui_module.iml" />
     </modules>
   </component>
 </project>

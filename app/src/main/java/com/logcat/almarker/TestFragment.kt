@@ -8,6 +8,7 @@ import com.logcat.almarker.base.BaseFragment
 import com.logcat.almarker.network_module.FuelNetworkUtil
 import com.logcat.almarker.network_module.FuelRequestModel
 import com.logcat.almarker.network_module.RequestMethod
+import com.logcat.ui_module.action_bar.ActionBar
 import kotlinx.android.synthetic.main.fragment_test.*
 
 class TestFragment : BaseFragment() {
@@ -38,4 +39,8 @@ class TestFragment : BaseFragment() {
                 )
         )
     }
+
+    override fun getActionBarContainer(): ViewGroup? = null
+
+    override fun getActionBarBuilder(): ActionBar.Builder? = null
 }
