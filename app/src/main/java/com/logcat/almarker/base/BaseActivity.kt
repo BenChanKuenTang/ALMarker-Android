@@ -9,8 +9,10 @@ import kotlinx.android.synthetic.main.activity_main.*
 abstract class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(getLayoutId())
     }
+
+    protected open fun getLayoutId(): Int = R.layout.activity_main
 
     fun showLoading(isShow: Boolean, loadingViewType: LoadingViewType? = null) {
         if (isShow && loadingViewType != null) startLoading(loadingViewType) else hideLoading()

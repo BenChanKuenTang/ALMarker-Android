@@ -3,14 +3,9 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.AppCompatTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="123"/>
-
     <Button
-        android:id="@+id/btnCall"
+        android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Call API"/>
+        android:text="Google Sign In"/>
 </LinearLayout>
